@@ -1,0 +1,21 @@
+(dp0
+Vaccess_token
+p1
+V00bd989c-ee53-4518-bab9-774c9d8b8bb4
+p2
+sVtoken_type
+p3
+Vbearer
+p4
+sVexpires_in
+p5
+I43199
+sVrefresh_token
+p6
+V7a269e46-401c-408d-b2a6-7c42fba1d6a3
+p7
+sVscope
+p8
+Vread_data_points write_data_points
+p9
+s.

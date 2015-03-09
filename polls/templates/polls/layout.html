@@ -1,0 +1,88 @@
+
+{% extends 'djfrontend/skeleton.html' %}
+{% block title %}ALAN HAU HEALTH{% endblock %}
+
+{% block djfrontend_twbs_css %}
+    <!-- <link href="/static/css/bootstrap.css" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style type="text/css">
+      /* Move down content because we have a fixed navbar that is 50px tall */
+      body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+      
+    </style>
+
+    {% block customScripts %}
+    {% endblock customScripts %}
+{% endblock djfrontend_twbs_css %}
+
+
+{% block body_content %}
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">ALAN HAU HEALTH DASHBOARD</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <!-- <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul> -->
+          <!-- <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in Google</button>
+          </form> -->
+          <div class="navbar-form navbar-right">
+            <a href="{% url 'polls:init_google_login' %}"><button class="btn btn-success">Google Sign in</button></a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Click on Google Sign in Button above to refresh data</h1>
+      </div>
+    </div>
+
+{% block custombody_content %}
+{% endblock custombody_content %}
+
+
+
+
+
+  {% endblock body_content %}
+
+
