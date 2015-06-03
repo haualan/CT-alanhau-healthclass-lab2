@@ -20,7 +20,7 @@ def exportResumeFile(request):
 
   # path_to_file = os.path.realpath("/Users/ahau/alanhausite/main/static/alan_hau_resume.pdf")
   # path_to_file = os.path.realpath("/static/alan_hau_resume.pdf")
-  path_to_file = os.path.realpath("/home/ubuntu/Care-Pigeon.com/alanhausite/main/static/alan_hau_resume.pdf")
+  path_to_file = os.path.realpath("/home/ubuntu/Care-pigeon.com/alanhausite/main/static/alan_hau_resume.pdf")
   f = open(path_to_file, 'r')
   
 
