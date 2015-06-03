@@ -1,11 +1,3 @@
-# CT-alanhau-healthclass-lab2
+# alanhausite
 
-to launch the site, on bash, cd into /mysite/ and run:
-
-```
-python manage.py runserver 7777
-```
-
-Now, in your browser, go to: http://localhost:7777/polls/
-
-Enjoy!
+It's just my site here...
