@@ -1,0 +1,351 @@
+{% extends 'main/layout.html' %}
+
+{% block customScripts %}
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  
+    <style type="text/css">
+
+    body { 
+        background: url("/static/main/images/CT-border-2.png") no-repeat fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #323a47;
+      }
+
+    p {
+      /*font-family: arial, helvetica, sans-serif;*/
+      font-family: 'Adelle', 'Georgia', serif;
+      font-size: 1.3em;
+      line-height: 1.6em;
+      margin: 0 0 20px;
+      padding: 0;
+
+    }
+
+    h5 {
+      font-weight: bold;
+      font-size: 1.6em;
+      line-height: 1.6em;
+      margin: 0 0 20px;
+      padding: 0;
+
+    }
+
+    h2, h1, h5 {
+      font-family: 'Roboto Condensed', 'Helvetica Neue', 'Arial', sans-serif;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 40px;
+
+    }
+
+    .page-header {
+      border-bottom: 1px solid #777;
+    }
+
+    .title-header {
+      font-size: 60px;
+      margin-top: 0px;
+      margin-bottom:0px;
+    } 
+
+    .carousel-inner {
+      width: auto;
+      height: 360px;
+      max-height: 360px;
+    }
+
+    .imgcontainer {
+    /*width: 400px;*/
+    height: 400px;
+    background: url("http://i.stack.imgur.com/2OrtT.jpg") no-repeat fixed;
+    background-size: cover;
+   /* background-repeat: no-repeat;
+    background-position: 50% 50%;*/
+    }
+
+
+    </style>
+
+{% endblock customScripts %}
+
+{% block custombody_content %}
+
+<div class="container">
+  <div class="page-header">
+    <div class="row">
+      <div class="col-lg-3 text-center">
+        <img style="max-width:100%; max-height:100%; width:200px; margin-bottom:20px;" src="/static/main/images/profile-sm.png">
+        
+
+      </div>
+      <div class="col-lg-9" style="margin-top: 20px;">
+        <h1 class="title-header">Welcome to My Profile </h1>
+        <h1 class="title-header"><small>Tech, healthcare, investments and more...</small></h1>
+      </div>
+
+    </div>
+    
+    
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <p>
+      My name is Alan Hau and I was born in Hong Kong. I went to school both in Hong Kong and United States and spent time working in various industries from financial services to education. Whether on the job or at school I'm always learning new things and meeting new people. As a full-stack engineer, it's my goal to apply what I learned to fulfill a greater social purpose and empower individuals through access to technology and information.
+      </p>
+
+      <p>
+        As crass as it sounds, you'd be surprised how uninformed Americans are when it comes to their healthcare and what technology could do to improve their lives.
+      </p>
+
+    
+      <p>
+      I recently graduated from Cornell University's Master in Engineering Computer Science program. 
+      <a href="http://tech.cornell.edu">Cornell Tech</a> is a new program situated in New York City and I am a member of the 2015 inaugural class. The program aims to support entrepreneurs and young companies in the ever-changing tech landscape.
+      </p>
+
+      
+      
+
+
+    </div>
+
+    <div class="col-lg-6 text-center">
+      <img style="max-width:100%; max-height:100%; width:600px; " src="/static/main/images/team-photo.jpg">
+
+      <div class="text-center" style="background: #313947;">
+        <img style="max-width:100%; max-height:100%;" src="/static/main/images/CT-logo.png">
+      </div>
+      
+    </div>
+  </div>
+
+  <br>
+
+
+ 
+  <div class="well">
+    <div class="row">
+      <div class="col-lg-12">
+        <h5>
+        The experience at Cornell Tech has really broadened my horizons with respect to the challenges and opportunites in healthcare and beyond. My projects include applications on Natural Language Processing (NLP), machine learning and big data analytics.
+        </h5>
+
+        <h5>
+          Technology has played a crucial role to my career and I hope you enjoy my showcase. <a href="/resume">Click here for my resume. </a>
+        </h5>
+      </div>
+    </div>
+    
+    
+  </div>
+    
+    
+ <a name="projects"></a>
+  <div class="page-header">
+    <h1>Selected Projects</h1>
+  </div>
+
+  <h2>Keyword Extractor from Unstructured Text</h2>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <img style="max-width:100%; max-height:100%;" LOOP=INFINITE src="/static/main/images/keywordextractanim-sm.gif">
+      
+    </div>
+
+    <div class="col-lg-6">
+      <p>
+        A Fortune 100 bank approached our student team to solve a particular problem about their internal search engine. The institutional sales team was having trouble finding relevant research reports for their clients because research analysts had difficulty adding keywords to reports when they were written. Due to the sheer volume and length of each report (>500,000 new reports per year from two to hundreds of pages) it's manually infeasible to tag each of them by hand. 
+      </p>
+
+      <p>
+        Using Named Entity Recognition (NER) and Term Frequency/ Inverse Document Frequency (TF-IDF) models wrapped with Python's Flask library, we have developed a web accessible API hosted with Apache on a simple Linux cloud server that allows keywords to be extracted from any unstructured text.
+      </p>
+
+      <p>
+        Not only can new reports be tagged automatically, the API can be scaled to run retroactively on millions of old reports in the bank's database.
+      </p>
+      
+    </div>
+    
+
+  </div>
+
+
+
+  <h2>Quantitative Scoring using NLP on Patient Centered Documents</h2>
+
+  <div class="row">
+    
+    <div class="col-lg-6">
+      <p>
+        Content creators (of websites / articles / pamphlets / handouts) face challenges of writing engaging materials for their readers, especially in a healthcare context. Using a "bag of words" and n-grams approach I have trained a model against the helpfulness vote on a medical forum targeted on patients with Rheumatoid Arthritis (RA). 
+      </p>
+
+      <p>
+        The result is a model that accepts unstructured text as an input and outputs a score from 0 to 100 to gauge whether the writing is engaging for readers looking for information on RA.
+      </p>
+
+      <p>
+        Training on different contexts can potentially yield sentiment and other classification models for a wide variety of uses in many industries.
+      </p>
+
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <a href="/NLPscore">
+            <button type="button" class="btn btn-lg btn-primary btn-block" >
+              Try it out! 
+            </button>
+          </a>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      
+
+
+    </div>
+
+    <div class="col-lg-6">
+      <img style="max-width:100%; max-height:100%;" src="/static/main/images/NLPmodel.png">
+      
+    </div>
+    
+
+  </div>
+
+
+
+  <h2>CarePigeon: Platform for Physicians to Reduce Surgical Risk and Liability</h2>
+    <div class="row">
+
+      <div class="col-lg-6">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3" class="active"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item">
+            <img style="max-width:100%; max-height:100%;" src="/static/main/images/progressbar.png">
+          </div>
+          <div class="item">
+            <img style="max-width:100%; max-height:100%;" src="/static/main/images/providerdash.png">
+          </div>
+          <div class="item">
+            <img style="max-width:100%; max-height:100%;" src="/static/main/images/quizandcontent.png">
+          </div>
+          <div class="item active">
+            <img style="max-width:100%; max-height:100%;" src="/static/main/images/carepigeon-bk.jpg">
+            <!-- <div class="imgcontainer" style=""></div> -->
+          </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+        
+      
+        
+      </div>
+
+      <div class="col-lg-6">
+        <p>
+          Over 3 Billion dollars is paid by insurance companies every year to settle lawsuits arising from medical malpractice on elective surgeries. Most of them are due to miscommunication arising from gaps in expectation and a lack of effort spent on patient education.
+        </p>
+
+        <p>
+          CarePigeon uses a MOOC-like approach (think Coursera, Khan Acadmemy...) to track the learning progress and compliance of a patient and streamlines the informed consent signing process. Surgeons can opt-out patients until they truly understand the risks, benefits and alternatives to their operation. This protects patients from having operations before they are emotionally ready and surgeons from unwanted liability.
+        </p>
+
+        <p>
+          Patent Pending. Feel free to contact me for a demo login.
+        </p>
+
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+           
+              <a href="http://52.11.204.38/patient/" type="button" class="btn btn-lg btn-primary btn-block" >
+                Try it out! (Patient Portal)
+              </a>
+      
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+           
+              <a href="http://52.11.204.38/provider/" type="button" class="btn btn-lg btn-primary btn-block" >
+                Try it out! (Provider Portal)
+              </a>
+      
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+        
+      </div>
+
+      
+    </div>
+
+  
+
+  <h2>Etrade Python API</h2>
+    <div class="row">
+
+      <div class="col-lg-6">
+        <p>
+          Applying machine learning methods to investing could be a fun thing to do, but there are barriers for investors even if they are well versed in Python. It is quite difficult to implement SciPy or NumPy models when most of the brokerage houses only provide APIs with Java or C++ examples. This is an open source library I've written that allows easy integration with Etrade's API for those investors who are looking to write programs in Python.
+        </p>
+      
+
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+             
+                <a href="https://github.com/haualan/etradePythonAPI" type="button" class="btn btn-lg btn-primary btn-block" >
+                  GitHub Repository
+                </a>
+        
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img style="max-width:100%; max-height:100%;" src="/static/main/images/etradeAPIpython.png">
+        
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+{% endblock custombody_content %}

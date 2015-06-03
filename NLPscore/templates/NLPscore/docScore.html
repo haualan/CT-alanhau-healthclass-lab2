@@ -1,0 +1,208 @@
+
+{% extends 'main/layout.html' %}
+
+{% block customScripts %}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $('#goodexample').click(function() //this will apply to all anchor tags
+      { 
+         $('#area').val('Rheumatoid Arthritis \
+Rheumatoid arthritis (RA) is an autoimmune disease in which your body’s immune system – which protects your health by attacking foreign substances like bacteria and viruses – mistakenly attacks your joints. The abnormal immune response causes inflammation that can damage joints and organs, such as the heart. Early diagnosis and prompt treatment is the key to preventing joint destruction and organ damage. \
+\
+People \
+About 1.5 million people in the United States have rheumatoid arthritis (RA). Nearly three times as many women have the disease as men. In women, RA most commonly begins between ages 30 and 60. In men, it often occurs later in life. \
+ \
+Symptoms \
+The severity of the disease can vary from person to person. Symptoms can change from day to day. Sudden increases in symptoms and illness are called flares. A flare can last for days or months. Key rheumatoid arthritis symptoms are pain, fatigue and warm, swollen, reddish joints. Long periods of joint stiffness in the morning are common. Inflammation in the small joints of the wrist and hand is typical. If a joint on one side of the body is affected, the same one on the other side is usually affected, too. \
+ \
+Treatment \
+There is no cure for RA, but there are a number of medications available to help ease symptoms, reduce inflammation, and slow the progression of the disease. No one drug works for everyone but many people find treatments that are very effective. The goal of treatment is remission, a state when inflammation is gone or is very low. A doctor, likely a rheumatologist – a specialty doctor who treats people with arthritis – should monitor your levels of disease activity, or inflammation, on a regular basis through exams and blood tests that reveal how well treatment is working. The doctor may add or change your medications or adjust the dosage after a few months, if the disease is still active. \
+ \
+Self-care \
+Self-management is an important part of rheumatoid arthritis care. Staying physically active is the key to keeping joints flexible. Too little movement can lead to joint stiffness. Strong muscles protect joints. Overall fitness improves health in many ways. Managing your weight, eating a nutritious diet and getting a good balance of rest and activity each day are important, too. \
+ \
+What to Do \
+If you think you might have rheumatoid arthritis - Find out when to see a doctor.'); //this puts the textarea for the id labeled 'area'
+      })
+
+  $('#modexample').click(function() //this will apply to all anchor tags
+      { 
+         $('#area').val('Rheumatoid arthritis (RA) is a disease that causes pain, swelling, and stiffness in the joints. In some people, it can also cause the joints to become damaged and deformed.\
+\
+Although it can affect any joint in the body, RA is most commonly found in the hands, wrists, feet, and knees. Usually, if it is found in one hand, it will appear in the other as well.\
+Sometimes RA can cause problems with body parts other than your joints such as your heart, lungs, eyes, or mouth.\
+RA usually lasts many years or an entire lifetime. For some people, RA can last for only a few months to a few years with treatment, although this is rare.\
+The symptoms of RA (pain, swelling, stiffness) can get worse for some periods of time (called a "flareup") and then get better for some periods of time.\
+What causes RA?\
+\
+The cause of RA is unknown, but researchers think the condition may be passed down in families. The pain and symptoms of RA happen when your immune system (the system of the body that helps defend you from germs) attacks the healthy lining of your joints. Doctors are not sure why the immune system in some people attacks their joints...\
+');
+      })
+
+  $('#badexample').click(function() //this will apply to all anchor tags
+    { 
+       $('#area').val('Over the last 2 decades, the treatment of patients with rheumatoid arthritis (RA) has changed considerably. Currently, the goal of therapy is not only symptom relief, but in particular the prevention of long-term structural damage and functional decline. To this end, an increasing number of effective disease-modifying antirheumatic drugs (DMARDs) as well as biologic agents have been developed and have demonstrated clinical value in randomized clinical trials. It has become clear that treatment should start early and must be maintained without interruption to reduce the occurrence of irreversible joint damage (1–8). Furthermore, several combinations of DMARDs as well as tumor necrosis factor (TNF) antagonists have shown superiority to DMARD monotherapy in patients with early (9–17) and longstanding (18–22) RA. Finally, intensive monitoring of disease activity and adjusting DMARD use accordingly has resulted in improved outcomes (23). However, the increase in therapeutic options has left unanswered the question of what the optimal therapeutic strategy is in patients presenting with RA. The BeSt (Dutch acronym for Behandel-Strategieën, “treatment strategies”) study is a multicenter, randomized clinical trial in which we compared the clinical and radiographic outcomes of 4 different treatment strategies: sequential monotherapy (group 1), step-up combination therapy (group 2), initial combination therapy with tapered high-dose prednisone (group 3), and initial combination therapy with the TNF antagonist infliximab (group 4). The common goal in all strategies was to reduce disease activity rapidly and persistently by tight monitoring and immediate adjustment of therapy in the case of an insufficient response. Here we present the results of the first year of followup.\
+ ');
+    })
+
+  });
+  </script>
+{% endblock customScripts %}
+
+
+{% block custombody_content %}
+
+<div class="container">
+
+
+  
+  <h2>Patient Engagement Tester</h2>
+  <br>
+
+  <p>Websites such as Patients Like Me and Smart Patients have been instrumental in building social networks around patients and caregivers in the United States. These platforms have given an important outlet for providers, patients and their families to reach out and learn from each other outside the regulations and confinements of a hospital. </p>
+
+  <p>
+     Over the years, these platforms have gathered bodies of texts or posts that patients ultimately find useful. Whether these posts are clinically useful remains unclear, however it is clear that readers typically upvote posts that emotionally resonate with them. Using these helpfulness votes and supervised machine learning techniques we can learn what patients feel strongly towards and better design models to classify helpfulness in unstructured text. 
+
+  </p>
+
+  <p>
+ These models may support patient engagement and prove useful for providers and other healthcare content producers (such as WebMD, bloggers… etc) to create better reading materials for patients in the future.
+ </p>
+
+<br>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>This model specifically focuses on text that is related to Rheumatoid Arthritis (RA) </h4>
+    </div>
+    
+    <div class="panel-body">
+      <h5>Tips to improve patient engagement:</h5>
+      <ul>
+        <li>
+          Use simple language with as little scientific jargon as possible
+        </li>
+        <li>
+          Use simple grammatical structures as if you are communicating casually with high-school level english
+        </li>
+        <li>
+          Describe both physical and emotional pain
+        </li>
+        <li>       
+          Use narrative-like scenarios with a first-person point of view
+        </li>
+      </ul>
+
+      <br>
+
+      <h5>Examples:</h5>
+      <p>
+      Try these examples from popular websites with descriptions of RA. See if you agree with the scoring system.
+      </p>
+      <br>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <p>
+            <a href="http://www.arthritis.org/arthritis-facts/disease-center/rheumatoid-arthritis.php">
+            A good example: Arthritis.org
+            </a>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <button class="btn" id="goodexample">Copy to textbox</button>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <p>
+            <a href="http://www.ncbi.nlm.nih.gov/pubmedhealth/PMHT0024678/">A moderate example: PubMed Health</a>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <button class="btn" id="modexample">Copy to textbox</button>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <p>
+            <a href="http://onlinelibrary.wiley.com/doi/10.1002/art.21405/full">
+            A poor example: An Academic Research Paper
+            </a>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <button class="btn" id="badexample">Copy to textbox</button>
+        </div>
+      </div>
+      
+    
+      <br>
+
+
+      <h5>Usage:</h5>
+  
+      <p>
+        Copy and paste your text snippet from a website or your own writing related to RA and click submit.
+      </p>
+
+      <br>
+
+
+
+      <form method="post" action="{% url 'NLPscore:docScore' %}" >
+      {% csrf_token %}
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div>
+            <textarea class="form-control" name="textEntry" id="area" rows="20">{{ textEntry }}</textarea>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div>
+            <button class="btn btn-lg btn-primary" type="submit">
+              Submit
+            </button>
+          </div>
+          {% if textEntry != "" %}
+            <h3>Your Score: {{ relativeScore }}</h3>
+            <p> {{ comment }}</p>
+          
+          {% endif %}
+
+        </div>
+      </div>
+        
+
+        <br>
+        
+        
+        
+      </form>
+
+      
+
+      </div>
+    
+
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+{% endblock custombody_content %}
