@@ -1,11 +1,12 @@
 
 {% extends 'djfrontend/skeleton.html' %}
-{% block title %}ALAN HAU HEALTH{% endblock %}
+{% block title %}Alan's Profile{% endblock %}
 
 {% block djfrontend_twbs_css %}
-    <!-- <link href="/static/css/bootstrap.css" rel="stylesheet"> -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" rel="stylesheet"> -->
 
     <style type="text/css">
 
@@ -13,9 +14,37 @@
       /* Move down content because we have a fixed navbar that is 50px tall */
       body {
         padding-top: 50px;
-        padding-bottom: 20px;
+        /*padding-bottom: 20px;*/
       }
 
+      .footer {
+        /*position: absolute;*/
+        bottom: 0;
+        width: 100%;
+        /*height: 60px;*/
+        background-color: #4E5D6C;
+        padding: 20px 100px 20px;
+      }
+
+      .circle
+      {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        padding: 6px 0;
+        font-size: 24px;
+        line-height: 1.74;
+        border-radius: 25px;
+        background: #df691a;
+      }
+
+      .footerList
+      {
+        list-style-type: none;
+        padding: 0px;
+      }
       
       
     </style>
@@ -28,7 +57,7 @@
 
 {% block body_content %}
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -36,7 +65,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">ALAN'S DASHBOARD</a>
+          <a class="navbar-brand" href="/">Alan's Profile</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -73,11 +102,136 @@
 
 
 
+
+
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
 
 {% block custombody_content %}
 {% endblock custombody_content %}
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <!-- <p>Place sticky footer content here.</p> -->
+
+<!--       <ul>
+        <li>
+          LinkedId
+
+        </li>
+        <li>
+          facebook
+        </li>
+
+      </ul> -->
+
+
+      <div class="row">
+
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="row text-center">
+                <div class="circle">
+                  <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                </div>  
+              </div>
+                    
+            </div>
+            <div class="col-xs-9">
+              <ul class="footerList">
+                <li><strong>Call</strong></li>
+               <li>+1 773 888 2681</li>
+              </ul>
+               <br>
+            </div>       
+          </div>
+        </div>
+
+
+
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="row text-center">
+                <div class="circle">
+                  <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+
+                </div>  
+              </div>
+                    
+            </div>
+            <div class="col-xs-9">
+              <ul class="footerList">
+               <li><strong>Contact</strong></li>
+               <li>alan.wc.hau[at]gmail.com</li>
+              </ul>
+              <br>
+            </div>       
+          </div>
+        </div>
+
+
+
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="row text-center">
+                <div class="circle">
+                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </div>  
+              </div>
+                    
+            </div>
+            <div class="col-xs-9">
+              <ul class="footerList">
+                <li><strong>Follow Me</strong></li>
+                <li>
+                  <a href="https://www.linkedin.com/in/alanhau"><img src="/static/main/images/social-18-linked-in.png"></a>
+                  <a href="https://www.facebook.com/alan.hau.14"><img src="/static/main/images/social-31-facebook.png"></a>
+                </li>
+              </ul>
+              <br>
+            </div>       
+          </div>
+        </div>
+
+
+
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="row text-center">
+                <div class="circle">
+                  <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>
+                </div>  
+              </div>
+                    
+            </div>
+            <div class="col-xs-9">
+              <ul class="footerList">
+                <li><strong>Copyright</strong></li>
+                <li>© 2015 by Alan Hau</li>
+              </ul>
+              <br>
+            </div>       
+          </div>
+        </div>
+
+
+      
+      </div>
+      
+    </div>
+    
+    
+
+  </footer>
+      
+
+
 
 
 
